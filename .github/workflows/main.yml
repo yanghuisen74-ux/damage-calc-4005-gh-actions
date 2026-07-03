@@ -18,7 +18,7 @@ jobs:
     
     - run: yarn install
     - name: Run tests with JUnit as reporter
-      run: npx jest --ci --reporters=default --reporters=jest-JUnit
+      run: npx jest --ci --reporters=default --reporters=jest-junit
       env:
         JEST_JUNIT_OUTPUT_DIR: "./junit/test-results.xml"
     - uses: actions/upload-artifact@v4
